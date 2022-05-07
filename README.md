@@ -10,11 +10,15 @@ git clone https://github.com/noboni/simple-crud.git
 #### Explore Rest APIs
 Listing the APIs below that I have created:
 
-| Method | Url | Decription | Sample Valid Request Body |
-| ------ | --- | ---------- | --------------------------- |
-| POST   | | | [JSON](#signup) |
-| GET   |  | | |
-| DELETE   | | | [VOID](#signin) |
+| Method | Url | Decription | 
+| ------ | --- | ---------- |
+| POST   | localhost:8080/student | Create a student | 
+| GET   |  localhost:8080/student/all | Get all students | 
+| GET   |  localhost:8080/student/id/{id} | Get student by id | 
+| GET   |  localhost:8080/student/name/{name} | Get all students by name |
+| PUT   |  localhost:8080/student/{id} | Update student by id |
+| DELETE   | localhost:8080/student/id/{id} | Delete student by id | 
+| DELETE   |  localhost:8080/student/name/{name} | Delete all students by name |
 
 #### Run the application locally
 * Open a terminal in the project directory and execute the following command: 
@@ -31,6 +35,6 @@ Listing the APIs below that I have created:
 * In the build/libs directory a jar file will be created named simple-0.0.1.jar
 * Put the jar file in the deployment machine and run the following command
 ```
-java -jar simple-0.0.1.jar
+java -jar simple-0.0.1.jar &
 ```
 
