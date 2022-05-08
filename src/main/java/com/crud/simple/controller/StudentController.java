@@ -42,7 +42,7 @@ public class StudentController {
     }
 
     @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
-    public StudentData getStudentsById(@PathVariable Long id){
+    public StudentData getStudentById(@PathVariable Long id){
         StudentData student = studentService.getStudentById(id);
         return student;
     }
@@ -53,7 +53,7 @@ public class StudentController {
     }
 
     @RequestMapping(value = "/name/{name}", method = RequestMethod.DELETE)
-    public void deleteStudentByName(@PathVariable String name){
+    public void deleteStudentsByName(@PathVariable String name){
         studentService.deleteStudentByName(name);
     }
 
